@@ -56,36 +56,43 @@ body{background:var(--bg);color:var(--text);font-family:'Nunito',sans-serif;posi
 ══════════════════════════════ */
 #home{padding-bottom:82px;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;}
 
-.home-top{padding:52px 20px 16px;background:linear-gradient(180deg,rgba(232,255,71,0.03) 0%,transparent 100%);}
-.greet{font-size:11px;font-weight:700;letter-spacing:2.5px;color:var(--muted2);text-transform:uppercase;margin-bottom:3px;}
-.home-h{font-family:'Barlow Condensed',sans-serif;font-size:36px;font-weight:900;line-height:0.92;}
+.home-top{padding:48px 20px 12px;background:linear-gradient(180deg,rgba(232,255,71,0.03) 0%,transparent 100%);}
+.greet{font-size:11px;font-weight:700;letter-spacing:2.5px;color:var(--muted2);text-transform:uppercase;margin-bottom:2px;}
+.home-h{font-family:'Barlow Condensed',sans-serif;font-size:32px;font-weight:900;line-height:0.92;}
 .home-h em{color:var(--accent);font-style:normal;}
-.home-dt{font-size:11px;color:var(--muted);margin-top:5px;}
+.home-dt{font-size:11px;color:var(--muted);margin-top:4px;}
 
 /* STATS — 3 cards */
-.stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;padding:0 20px 16px;}
-.stat-c{background:var(--card);border:1px solid var(--border);border-radius:13px;padding:13px 8px;text-align:center;}
-.stat-v{font-family:'Barlow Condensed',sans-serif;font-size:30px;font-weight:900;line-height:1;color:var(--accent);}
+.stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:0 20px 12px;}
+.stat-c{background:var(--card);border:1px solid var(--border);border-radius:13px;padding:11px 8px;text-align:center;}
+.stat-v{font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:900;line-height:1;color:var(--accent);}
 .stat-l{font-size:9px;font-weight:800;letter-spacing:1px;color:var(--muted);text-transform:uppercase;margin-top:3px;line-height:1.3;}
 
 /* TODAY HERO CARD */
-.today-hero{margin:0 20px 14px;background:var(--card);border:1px solid var(--border);border-radius:18px;overflow:hidden;cursor:pointer;transition:transform 0.15s,border-color 0.2s;}
+.today-hero{margin:0 20px 14px;background:var(--card);border:1px solid var(--border);border-radius:18px;overflow:visible;cursor:pointer;transition:transform 0.15s,border-color 0.2s;position:relative;}
 .today-hero:active{transform:scale(0.985);}
-.th-stripe{height:4px;transition:background 0.3s;}
-.th-body{padding:16px 18px;}
-.th-suplbl{font-size:9.5px;font-weight:800;letter-spacing:2px;color:var(--muted);text-transform:uppercase;margin-bottom:4px;}
-.th-title{font-family:'Barlow Condensed',sans-serif;font-size:25px;font-weight:900;line-height:1;}
-.th-focus{font-size:12px;color:var(--muted2);margin-top:3px;font-weight:600;}
-.th-foot{display:flex;align-items:center;justify-content:space-between;margin-top:12px;gap:12px;}
-.th-prog-wrap{flex:1;}
+.th-stripe{height:4px;border-radius:18px 18px 0 0;transition:background 0.3s;}
+.th-body{padding:13px 16px 14px;}
+.th-suplbl{font-size:9px;font-weight:800;letter-spacing:2px;color:var(--muted);text-transform:uppercase;margin-bottom:3px;}
+.th-title{font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:900;line-height:1.1;}
+.th-focus{font-size:11px;color:var(--muted2);margin-top:2px;font-weight:600;line-height:1.4;}
+.th-foot{display:flex;align-items:center;justify-content:space-between;margin-top:10px;gap:10px;}
+.th-prog-wrap{flex:1;min-width:0;}
 .th-prog-bg{height:4px;background:var(--border);border-radius:2px;overflow:hidden;}
 .th-prog-fill{height:100%;border-radius:2px;transition:width 0.4s ease;}
 .th-prog-txt{font-size:10px;color:var(--muted);margin-top:4px;font-weight:600;}
-.th-go{padding:8px 15px;border-radius:100px;background:var(--accent);border:none;color:#000;font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:900;cursor:pointer;white-space:nowrap;flex-shrink:0;}
+.th-go{padding:7px 14px;border-radius:100px;background:var(--accent);border:none;color:#000;font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:900;cursor:pointer;white-space:nowrap;flex-shrink:0;}
 
 /* REST BTN */
-.rest-btn{margin:0 20px 16px;padding:13px;background:transparent;border:1px solid var(--border);border-radius:13px;color:var(--muted2);font-family:'Nunito',sans-serif;font-size:13px;font-weight:700;cursor:pointer;width:calc(100% - 40px);display:flex;align-items:center;justify-content:center;gap:8px;transition:all 0.2s;}
+.rest-btn{margin:0 20px 10px;padding:13px;background:transparent;border:1px solid var(--border);border-radius:13px;color:var(--muted2);font-family:'Nunito',sans-serif;font-size:13px;font-weight:700;cursor:pointer;width:calc(100% - 40px);display:flex;align-items:center;justify-content:center;gap:8px;transition:all 0.2s;}
 .rest-btn.on{background:rgba(239,68,68,0.08);border-color:var(--red);color:var(--red);}
+
+/* CARDIO BTN */
+.cardio-btn{margin:0 20px 16px;padding:13px;background:transparent;border:1px solid var(--border);border-radius:13px;color:var(--muted2);font-family:'Nunito',sans-serif;font-size:13px;font-weight:700;cursor:pointer;width:calc(100% - 40px);display:flex;align-items:center;justify-content:center;gap:8px;transition:all 0.2s;}
+.cardio-btn.on{background:rgba(6,182,212,0.09);border-color:#06b6d4;color:#06b6d4;}
+
+/* Calendar cardio cell */
+.cal-cell.c-cardio{background:rgba(6,182,212,0.13);border-color:rgba(6,182,212,0.3);color:#06b6d4;}
 
 /* SECTION LABEL */
 .sec-lbl{font-size:9.5px;font-weight:800;letter-spacing:2px;color:var(--muted);text-transform:uppercase;padding:0 20px;margin-bottom:9px;}
@@ -289,6 +296,40 @@ body{background:var(--bg);color:var(--text);font-family:'Nunito',sans-serif;posi
 .modal-btns{display:flex;flex-direction:column;gap:9px;}
 .mbtn-d{padding:14px;border-radius:13px;background:rgba(239,68,68,0.1);border:1px solid var(--red);color:var(--red);font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:900;cursor:pointer;letter-spacing:1px;}
 .mbtn-c{padding:14px;border-radius:13px;background:var(--card);border:1px solid var(--border);color:var(--muted2);font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:900;cursor:pointer;letter-spacing:1px;}
+
+/* BACKDATE MODAL */
+.bd-ov{position:fixed;inset:0;z-index:500;background:rgba(0,0,0,0.8);display:none;align-items:flex-end;justify-content:center;}
+.bd-ov.show{display:flex;}
+.bd-box{background:var(--surface);border:1px solid var(--border);border-radius:22px 22px 0 0;padding:0 0 34px;width:100%;max-width:480px;animation:slideUp 0.24s ease;overflow:hidden;}
+.bd-handle{width:36px;height:4px;background:var(--border);border-radius:2px;margin:14px auto 0;}
+.bd-hdr{padding:18px 22px 14px;border-bottom:1px solid var(--border);}
+.bd-date{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:900;color:var(--text);letter-spacing:0.5px;}
+.bd-cur{font-size:12px;color:var(--muted2);margin-top:3px;font-weight:600;}
+.bd-options{padding:16px 16px 0;}
+.bd-opt{display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:14px;margin-bottom:10px;cursor:pointer;border:2px solid var(--border);background:var(--card);transition:all 0.18s;}
+.bd-opt:active{transform:scale(0.97);}
+.bd-opt.selected{border-color:currentColor;}
+.bd-opt-icon{font-size:26px;flex-shrink:0;width:32px;text-align:center;}
+.bd-opt-body{flex:1;}
+.bd-opt-title{font-weight:800;font-size:14px;}
+.bd-opt-sub{font-size:11px;color:var(--muted2);margin-top:2px;}
+.bd-tick{width:20px;height:20px;border-radius:50%;border:2px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:11px;flex-shrink:0;transition:all 0.15s;}
+.bd-opt.selected .bd-tick{background:currentColor;border-color:currentColor;color:#000;}
+.bd-workout-pick{padding:0 16px 0;}
+.bd-wp-lbl{font-size:9.5px;font-weight:800;letter-spacing:2px;color:var(--muted);text-transform:uppercase;padding:10px 4px 8px;}
+.bd-wp-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;padding-bottom:16px;}
+.bd-day-btn{border-radius:12px;padding:10px 4px;border:2px solid var(--border);background:var(--card);cursor:pointer;text-align:center;transition:all 0.15s;}
+.bd-day-btn:active{transform:scale(0.95);}
+.bd-day-btn.sel{border-color:currentColor;}
+.bd-day-num{font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:900;line-height:1;}
+.bd-day-name{font-size:8px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-top:2px;}
+.bd-save{margin:4px 16px 0;padding:15px;border-radius:14px;background:var(--accent);border:none;color:#000;font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:900;cursor:pointer;width:calc(100% - 32px);letter-spacing:1px;transition:all 0.15s;}
+.bd-save:active{transform:scale(0.97);}
+.bd-cancel{margin:10px 16px 0;padding:13px;border-radius:14px;background:transparent;border:1px solid var(--border);color:var(--muted2);font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:900;cursor:pointer;width:calc(100% - 32px);letter-spacing:1px;}
+/* clickable calendar cells */
+.cal-cell.clickable{cursor:pointer;transition:transform 0.12s,filter 0.12s;}
+.cal-cell.clickable:active{transform:scale(0.88);filter:brightness(1.3);}
+.cal-cell.clickable:hover{filter:brightness(1.2);}
 </style>
 </head>
 <body>
@@ -357,6 +398,10 @@ body{background:var(--bg);color:var(--text);font-family:'Nunito',sans-serif;posi
     <span id="rest-icon">😴</span><span id="rest-lbl">Mark Today as Rest Day</span>
   </button>
 
+  <button class="cardio-btn" id="cardio-btn" onclick="toggleCardio()">
+    <span id="cardio-icon">🚴</span><span id="cardio-lbl">Mark Today as Cardio Day</span>
+  </button>
+
   <div class="sec-lbl">Last 7 Days</div>
   <div class="week-strip" id="week-strip"></div>
   <div style="height:10px;"></div>
@@ -380,7 +425,7 @@ body{background:var(--bg);color:var(--text);font-family:'Nunito',sans-serif;posi
     <button class="dtab" onclick="setDashTab('year',this)">Yearly</button>
   </div>
   <div class="dash-stats">
-    <div class="ds-c"><div class="ds-v" id="ds-done">0</div><div class="ds-l">Completed</div></div>
+    <div class="ds-c"><div class="ds-v" id="ds-done">0</div><div class="ds-l">Workouts Done</div></div>
     <div class="ds-c"><div class="ds-v" id="ds-rest">0</div><div class="ds-l">Rest Days</div></div>
     <div class="ds-c"><div class="ds-v" id="ds-best">0</div><div class="ds-l">Best Streak</div></div>
     <div class="ds-c"><div class="ds-v" id="ds-rate">0%</div><div class="ds-l">Completion %</div></div>
@@ -432,6 +477,65 @@ body{background:var(--bg);color:var(--text);font-family:'Nunito',sans-serif;posi
       <button class="mbtn-d" onclick="confirmReset()">YES, RESET EVERYTHING</button>
       <button class="mbtn-c" onclick="hideReset()">CANCEL</button>
     </div>
+  </div>
+</div>
+
+<!-- BACKDATE MODAL -->
+<div class="bd-ov" id="bd-modal">
+  <div class="bd-box">
+    <div class="bd-handle"></div>
+    <div class="bd-hdr">
+      <div class="bd-date" id="bd-date-lbl">—</div>
+      <div class="bd-cur" id="bd-cur-lbl">Tap an option to log this day</div>
+    </div>
+    <div class="bd-options" id="bd-options">
+
+      <div class="bd-opt" id="bdopt-done" onclick="bdSelect('done')">
+        <div class="bd-opt-icon">✅</div>
+        <div class="bd-opt-body">
+          <div class="bd-opt-title">Mark as Completed</div>
+          <div class="bd-opt-sub">Counts toward streak &amp; total workouts</div>
+        </div>
+        <div class="bd-tick" id="bdtick-done">✓</div>
+      </div>
+
+      <div class="bd-opt" id="bdopt-cardio" onclick="bdSelect('cardio')">
+        <div class="bd-opt-icon">🚴</div>
+        <div class="bd-opt-body">
+          <div class="bd-opt-title">Cardio Day</div>
+          <div class="bd-opt-sub">Active training — counts toward streak</div>
+        </div>
+        <div class="bd-tick" id="bdtick-cardio">✓</div>
+      </div>
+
+      <div class="bd-opt" id="bdopt-rest" onclick="bdSelect('rest')">
+        <div class="bd-opt-icon">😴</div>
+        <div class="bd-opt-body">
+          <div class="bd-opt-title">Rest Day</div>
+          <div class="bd-opt-sub">Recovery day — does not count in streak</div>
+        </div>
+        <div class="bd-tick" id="bdtick-rest">✓</div>
+      </div>
+
+      <div class="bd-opt" id="bdopt-clear" onclick="bdSelect('clear')">
+        <div class="bd-opt-icon">✕</div>
+        <div class="bd-opt-body">
+          <div class="bd-opt-title">Clear / Unlog</div>
+          <div class="bd-opt-sub">Remove any log entry for this day</div>
+        </div>
+        <div class="bd-tick" id="bdtick-clear">✓</div>
+      </div>
+
+    </div>
+
+    <!-- Workout type picker — shown only when 'done' is selected -->
+    <div id="bd-workout-pick" class="bd-workout-pick" style="display:none;">
+      <div class="bd-wp-lbl">Which workout?</div>
+      <div class="bd-wp-grid" id="bd-wp-grid"></div>
+    </div>
+
+    <button class="bd-save" id="bd-save-btn" onclick="bdSave()">SAVE</button>
+    <button class="bd-cancel" onclick="bdClose()">CANCEL</button>
   </div>
 </div>
 
@@ -532,7 +636,8 @@ function load(){
 const todayStr = () => new Date().toISOString().split('T')[0];
 const getEntry = k => S.log[k]||null;
 function ensureEntry(k, dayId){
-  if(!S.log[k]) S.log[k]={dayId, completed:[], isRest:false, isDone:false};
+  if(!S.log[k]) S.log[k]={dayId, completed:[], isRest:false, isCardio:false, isDone:false};
+  if(S.log[k].isCardio===undefined) S.log[k].isCardio=false; // migrate old entries
   return S.log[k];
 }
 
@@ -559,9 +664,9 @@ function calcStreak(){
     const d = new Date(now); d.setDate(now.getDate()-i);
     const k = d.toISOString().split('T')[0];
     const e = S.log[k];
-    // Only count actual workout completions — rest days break the streak
-    if(e && e.isDone && !e.isRest) streak++;
-    else if(i > 0) break; // gap found, stop counting
+    // Cardio counts as a workout day; rest does NOT count
+    if(e && !e.isRest && (e.isDone || e.isCardio)) streak++;
+    else if(i > 0) break;
   }
   return streak;
 }
@@ -570,7 +675,7 @@ function bestStreak(){
   let best=0, cur=0, prev=null;
   Object.keys(S.log).sort().forEach(k=>{
     const e = S.log[k];
-    if(e && e.isDone && !e.isRest){
+    if(e && !e.isRest && (e.isDone || e.isCardio)){
       if(prev){
         const diff = (new Date(k)-new Date(prev))/86400000;
         cur = diff===1 ? cur+1 : 1;
@@ -578,14 +683,13 @@ function bestStreak(){
       best = Math.max(best,cur);
       prev = k;
     } else {
-      // rest day or not done — reset streak count for consecutive calculation
       cur = 0; prev = null;
     }
   });
   return best;
 }
 
-// Last 7 calendar days trained (isDone && !isRest)
+// Last 7 calendar days trained (isDone || isCardio, but NOT isRest)
 function last7Trained(){
   const now = new Date();
   let count = 0;
@@ -593,7 +697,7 @@ function last7Trained(){
     const d = new Date(now); d.setDate(now.getDate()-i);
     const k = d.toISOString().split('T')[0];
     const e = S.log[k];
-    if(e && e.isDone && !e.isRest) count++;
+    if(e && !e.isRest && (e.isDone || e.isCardio)) count++;
   }
   return count;
 }
@@ -649,6 +753,10 @@ function renderHome(){
     ttl.textContent='😴 REST DAY'; ttl.style.color='var(--red)';
     tfoc.textContent='Recovery is part of the plan';
     goBtn.textContent='—'; progWrap.style.display='none';
+  } else if(entry && entry.isCardio){
+    ttl.textContent='🚴 CARDIO DAY'; ttl.style.color='#06b6d4';
+    tfoc.textContent='Active training day — counts toward your streak!';
+    goBtn.textContent='VIEW →'; progWrap.style.display='none';
   } else if(entry && entry.isDone){
     ttl.textContent='✅ '+day.name; ttl.style.color='var(--green)';
     tfoc.textContent='Completed · Next: '+DAYS[(idx+1)%DAYS.length].name;
@@ -662,16 +770,28 @@ function renderHome(){
     document.getElementById('th-prog-txt').textContent=doneCount+' / '+allEx.length+' exercises';
   }
 
-  // Stats — streak excludes rest, last 7 days trained excludes rest
+  // Stats — streak & last 7 count cardio; total workouts counts cardio too
   document.getElementById('s-streak').textContent = calcStreak();
-  document.getElementById('s-total').textContent = Object.values(S.log).filter(e=>e.isDone&&!e.isRest).length;
+  document.getElementById('s-total').textContent = Object.values(S.log).filter(e=>!e.isRest&&(e.isDone||e.isCardio)).length;
   document.getElementById('s-7day').textContent = last7Trained();
 
-  // Rest button
+  // Rest button — disable if cardio is active
   const isRest = entry && entry.isRest;
-  document.getElementById('rest-btn').className='rest-btn'+(isRest?' on':'');
+  const isCardio = entry && entry.isCardio;
+  const restBtn = document.getElementById('rest-btn');
+  restBtn.className='rest-btn'+(isRest?' on':'');
+  restBtn.style.opacity = isCardio ? '0.35' : '1';
+  restBtn.style.pointerEvents = isCardio ? 'none' : 'auto';
   document.getElementById('rest-icon').textContent=isRest?'✕':'😴';
   document.getElementById('rest-lbl').textContent=isRest?'Remove Rest Day':'Mark Today as Rest Day';
+
+  // Cardio button — disable if rest is active
+  const cardioBtn = document.getElementById('cardio-btn');
+  cardioBtn.className='cardio-btn'+(isCardio?' on':'');
+  cardioBtn.style.opacity = isRest ? '0.35' : '1';
+  cardioBtn.style.pointerEvents = isRest ? 'none' : 'auto';
+  document.getElementById('cardio-icon').textContent=isCardio?'✕':'🚴';
+  document.getElementById('cardio-lbl').textContent=isCardio?'Remove Cardio Day':'Mark Today as Cardio Day';
 
   // Last 7 days strip (not this week from Sunday — last 7 rolling days)
   renderLast7Strip(now);
@@ -687,6 +807,7 @@ function renderLast7Strip(now){
     const e=S.log[k]; const isT=k===todayStr();
     let ic='·';
     if(e&&e.isRest) ic='😴';
+    else if(e&&e.isCardio) ic='🚴';
     else if(e&&e.isDone) ic='✅';
     else if(e&&e.completed&&e.completed.length>0) ic='⚡';
     else if(!isT&&d<now) ic='—';
@@ -699,10 +820,25 @@ function renderLast7Strip(now){
 
 function toggleRest(){
   const k=todayStr(), idx=computeNextIdx();
-  if(!S.log[k]) S.log[k]={dayId:DAYS[idx].id, completed:[], isRest:false, isDone:false};
-  S.log[k].isRest = !S.log[k].isRest;
-  if(S.log[k].isRest){ S.log[k].isDone=false; toast('😴 Rest day marked'); }
-  else toast('Rest day removed');
+  const e=ensureEntry(k, DAYS[idx].id);
+  e.isRest = !e.isRest;
+  if(e.isRest){
+    e.isDone=false;
+    e.isCardio=false; // mutual exclusion
+    toast('😴 Rest day marked — not counted in streak');
+  } else toast('Rest day removed');
+  save(); renderHome();
+  if(curScreen==='train') renderTrain();
+}
+
+function toggleCardio(){
+  const k=todayStr(), idx=computeNextIdx();
+  const e=ensureEntry(k, DAYS[idx].id);
+  e.isCardio = !e.isCardio;
+  if(e.isCardio){
+    e.isRest=false; // mutual exclusion
+    toast('🚴 Cardio day marked — counts toward your streak!');
+  } else toast('Cardio day removed');
   save(); renderHome();
   if(curScreen==='train') renderTrain();
 }
@@ -734,6 +870,7 @@ function buildTabBar(todayIdx){
     let statusDot = '';
     if(isDaysDoneToday) statusDot='✅';
     else if(entry && entry.dayId===day.id && entry.isRest) statusDot='😴';
+    else if(entry && entry.dayId===day.id && entry.isCardio) statusDot='🚴';
 
     btn.innerHTML=`
       <div class="dt-num" style="${day.id===activeTrainDayId?'color:'+day.color:''}">${day.label}${isToday?'<span class="dt-star">★</span>':''}</div>
@@ -796,6 +933,7 @@ function buildPanel(day, isToday){
   let statusHtml='';
   if(isDone) statusHtml=`<span class="dp-status" style="background:rgba(34,197,94,0.1);color:var(--green)">✓ Completed</span>`;
   else if(isRest) statusHtml=`<span class="dp-status" style="background:rgba(239,68,68,0.1);color:var(--red)">😴 Rest Day</span>`;
+  else if(isDayActive && entry.isCardio) statusHtml=`<span class="dp-status" style="background:rgba(6,182,212,0.1);color:#06b6d4">🚴 Cardio Day</span>`;
   else if(isToday) statusHtml=`<span class="dp-status" style="background:rgba(232,255,71,0.08);color:var(--accent)">★ Today's Session</span>`;
 
   hdr.innerHTML=`
@@ -823,6 +961,15 @@ function buildPanel(day, isToday){
     ro.className='rest-overlay-panel';
     ro.innerHTML=`<div class="rop-icon">😴</div><div class="rop-txt">Rest Day</div><div class="rop-sub">Recovery is part of the plan. Come back stronger tomorrow.</div>`;
     panel.appendChild(ro);
+    return panel;
+  }
+
+  // Cardio overlay
+  if(isDayActive && entry && entry.isCardio){
+    const co=document.createElement('div');
+    co.style.cssText='margin:0 20px 16px;padding:18px;background:rgba(6,182,212,0.07);border:1px solid rgba(6,182,212,0.2);border-radius:13px;text-align:center;';
+    co.innerHTML=`<div style="font-size:32px;margin-bottom:6px;">🚴</div><div style="font-size:14px;font-weight:700;color:#06b6d4;">Cardio Day</div><div style="font-size:12px;color:var(--muted2);margin-top:3px;">Active training counts toward your streak & total workouts.</div>`;
+    panel.appendChild(co);
     return panel;
   }
 
@@ -950,9 +1097,10 @@ function toggleEx(exId, day, el){
 function completeDay(day){
   const k=todayStr();
   const e=ensureEntry(k, day.id);
-  if(e.isRest) return;
+  if(e.isRest||e.isCardio) return;
   const allEx=[...day.exercises,...(day.core||[])];
   e.isDone=true;
+  e.isCardio=false;
   e.isPartial=e.completed.length<allEx.length;
   S.nextDayIdx=(DAYS.findIndex(d=>d.id===day.id)+1)%DAYS.length;
   save();
@@ -993,8 +1141,9 @@ function setDashTab(tab, btn){
 
 function renderDash(){
   const entries=Object.entries(S.log);
-  const done=entries.filter(([,e])=>e.isDone&&!e.isRest);
+  const done=entries.filter(([,e])=>!e.isRest&&(e.isDone||e.isCardio));
   const rests=entries.filter(([,e])=>e.isRest);
+  const cardios=entries.filter(([,e])=>e.isCardio);
   const past=entries.filter(([k])=>k<=todayStr());
   const rate=past.length>0?Math.round(done.length/past.length*100):0;
 
@@ -1007,15 +1156,22 @@ function renderDash(){
   if(dashTabMode==='month') renderMonthCal(cal);
   else renderYearCal(cal);
 
-  // Type bars
+  // Type bars — include cardio
   const tc={};DAYS.forEach(d=>tc[d.id]=0);
-  done.forEach(([,e])=>{if(tc[e.dayId]!==undefined)tc[e.dayId]++;});
+  tc['cardio']=0;
+  entries.forEach(([,e])=>{
+    if(e.isCardio) tc['cardio']++;
+    else if(e.isDone&&!e.isRest&&tc[e.dayId]!==undefined) tc[e.dayId]++;
+  });
   const mx=Math.max(...Object.values(tc),1);
   const tb=document.getElementById('type-bars');tb.innerHTML='';
   DAYS.forEach(d=>{
     const p=Math.round(tc[d.id]/mx*100);
     tb.innerHTML+=`<div class="tb-row"><div class="tb-lbl" style="color:${d.color}">${d.name.split(' ')[0]}</div><div class="tb-track"><div class="tb-fill" style="width:${p}%;background:${d.color}"></div></div><div class="tb-cnt">${tc[d.id]}</div></div>`;
   });
+  // Cardio row
+  const cp=Math.round(tc['cardio']/mx*100);
+  tb.innerHTML+=`<div class="tb-row"><div class="tb-lbl" style="color:#06b6d4">Cardio</div><div class="tb-track"><div class="tb-fill" style="width:${cp}%;background:#06b6d4"></div></div><div class="tb-cnt">${tc['cardio']}</div></div>`;
 }
 
 function renderMonthCal(parent){
@@ -1037,19 +1193,27 @@ function renderMonthCal(parent){
     let cls='cal-cell ',ic='';
     if(isFut) cls+='future';
     else if(e&&e.isRest){cls+='c-rest';ic='✕';}
+    else if(e&&e.isCardio){cls+='c-cardio';ic='🚴';}
     else if(e&&e.isDone&&!e.isPartial){cls+='c-done';ic='✓';}
     else if(e&&e.isDone&&e.isPartial){cls+='c-part';ic='~';}
     else if(!isFut&&!isT) cls+='c-skip';
     else cls+='future';
     if(isT) cls+=' today-c';
+    if(!isFut) cls+=' clickable';
     const el=document.createElement('div');el.className=cls;
     el.innerHTML=`<div>${d}</div><div class="cal-icon">${ic}</div>`;
+    if(!isFut) el.onclick=()=>openDayModal(k);
     grid.appendChild(el);
   }
   wrap.appendChild(grid);
   const leg=document.createElement('div');leg.className='cal-legend';
-  leg.innerHTML=`<div class="leg"><div class="leg-dot" style="background:rgba(34,197,94,0.5)"></div>Done</div><div class="leg"><div class="leg-dot" style="background:rgba(239,68,68,0.4)"></div>Rest</div><div class="leg"><div class="leg-dot" style="background:rgba(240,192,64,0.4)"></div>Partial</div><div class="leg"><div class="leg-dot" style="background:var(--border)"></div>Upcoming</div>`;
-  wrap.appendChild(leg);parent.appendChild(wrap);
+  leg.innerHTML=`<div class="leg"><div class="leg-dot" style="background:rgba(34,197,94,0.5)"></div>Done</div><div class="leg"><div class="leg-dot" style="background:rgba(6,182,212,0.5)"></div>Cardio</div><div class="leg"><div class="leg-dot" style="background:rgba(239,68,68,0.4)"></div>Rest</div><div class="leg"><div class="leg-dot" style="background:rgba(240,192,64,0.4)"></div>Partial</div><div class="leg"><div class="leg-dot" style="background:var(--border)"></div>Upcoming</div>`;
+  wrap.appendChild(leg);
+  const hint=document.createElement('div');
+  hint.style.cssText='font-size:10px;color:var(--muted);text-align:center;padding:0 20px 4px;letter-spacing:0.5px;';
+  hint.textContent='👆 Tap any past day to log or edit it';
+  wrap.appendChild(hint);
+  parent.appendChild(wrap);
 }
 
 function renderYearCal(parent){
@@ -1070,11 +1234,13 @@ function renderYearCal(parent){
       const dt=new Date(dashYear,mi,d);const k=dt.toISOString().split('T')[0];const e=S.log[k];const isFut=dt>now;
       let bg='var(--card)';
       if(e&&e.isRest) bg='rgba(239,68,68,0.45)';
+      else if(e&&e.isCardio) bg='rgba(6,182,212,0.5)';
       else if(e&&e.isDone) bg='rgba(34,197,94,0.5)';
       else if(!isFut) bg='rgba(255,255,255,0.04)';
       const el=document.createElement('div');
-      el.style.cssText=`aspect-ratio:1;border-radius:3px;background:${bg};`;
+      el.style.cssText=`aspect-ratio:1;border-radius:3px;background:${bg};${!isFut?'cursor:pointer;':''}`;
       if(k===todayStr()) el.style.outline='1.5px solid var(--accent)';
+      if(!isFut) el.onclick=()=>openDayModal(k);
       mg.appendChild(el);
     }
     mw.appendChild(mg);wrap.appendChild(mw);
@@ -1086,6 +1252,134 @@ function prevMon(){dashMonth--;if(dashMonth<0){dashMonth=11;dashYear--;}renderDa
 function nextMon(){dashMonth++;if(dashMonth>11){dashMonth=0;dashYear++;}renderDash();}
 function prevYr(){dashYear--;renderDash();}
 function nextYr(){dashYear++;renderDash();}
+
+// ═══════════════════════════════════════
+// BACKDATE MODAL
+// ═══════════════════════════════════════
+let bdKey = null;      // date string being edited e.g. '2025-04-10'
+let bdChoice = null;   // 'done' | 'cardio' | 'rest' | 'clear'
+let bdDayId = null;    // which DAYS[] id if choice === 'done'
+
+function openDayModal(k){
+  bdKey = k;
+  bdChoice = null;
+  bdDayId = null;
+
+  // Format the date nicely
+  const dt = new Date(k + 'T12:00:00');
+  const dateStr = dt.toLocaleDateString('en-AU',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+  document.getElementById('bd-date-lbl').textContent = dateStr;
+
+  // Show current state
+  const e = S.log[k];
+  let curTxt = 'No log — tap an option below';
+  if(e && e.isRest)   curTxt = 'Currently: 😴 Rest Day';
+  else if(e && e.isCardio) curTxt = 'Currently: 🚴 Cardio Day';
+  else if(e && e.isDone)  curTxt = 'Currently: ✅ Completed (' + (DAYS.find(d=>d.id===e.dayId)||{name:'—'}).name + ')';
+  document.getElementById('bd-cur-lbl').textContent = curTxt;
+
+  // Pre-select based on current state
+  if(e && e.isRest)    bdSelect('rest', true);
+  else if(e && e.isCardio) bdSelect('cardio', true);
+  else if(e && e.isDone)  { bdSelect('done', true); if(e.dayId) bdPickDay(e.dayId, true); }
+  else bdClearTicks();
+
+  document.getElementById('bd-modal').classList.add('show');
+}
+
+function bdClose(){
+  document.getElementById('bd-modal').classList.remove('show');
+  bdKey=null; bdChoice=null; bdDayId=null;
+}
+
+const BD_COLORS = {done:'var(--green)',cardio:'#06b6d4',rest:'var(--red)',clear:'var(--muted)'};
+
+function bdClearTicks(){
+  ['done','cardio','rest','clear'].forEach(t=>{
+    const opt=document.getElementById('bdopt-'+t);
+    const tick=document.getElementById('bdtick-'+t);
+    opt.classList.remove('selected');
+    opt.style.color='';
+    opt.style.borderColor='var(--border)';
+    tick.style.background='transparent';
+    tick.style.borderColor='var(--border)';
+    tick.style.color='transparent';
+  });
+}
+
+function bdSelect(choice, silent){
+  bdClearTicks();
+  bdChoice = choice;
+  const col = BD_COLORS[choice] || 'var(--muted)';
+  const opt = document.getElementById('bdopt-'+choice);
+  const tick = document.getElementById('bdtick-'+choice);
+  opt.classList.add('selected');
+  opt.style.color = col;
+  opt.style.borderColor = col;
+  tick.style.background = col;
+  tick.style.borderColor = col;
+  tick.style.color = choice === 'rest' || choice === 'clear' ? '#fff' : '#000';
+
+  // Show workout picker only for 'done'
+  const wp = document.getElementById('bd-workout-pick');
+  if(choice === 'done'){
+    wp.style.display = 'block';
+    buildWpGrid();
+  } else {
+    wp.style.display = 'none';
+    bdDayId = null;
+  }
+}
+
+function buildWpGrid(){
+  const grid = document.getElementById('bd-wp-grid');
+  grid.innerHTML = '';
+  DAYS.forEach(day => {
+    const btn = document.createElement('button');
+    btn.className = 'bd-day-btn' + (bdDayId===day.id?' sel':'');
+    btn.style.color = day.color;
+    if(bdDayId===day.id) btn.style.borderColor = day.color;
+    btn.innerHTML = `<div class="bd-day-num" style="color:${day.color}">${day.label.replace('DAY ','D')}</div><div class="bd-day-name">${day.name.split(' ')[0]}</div>`;
+    btn.onclick = () => bdPickDay(day.id);
+    grid.appendChild(btn);
+  });
+}
+
+function bdPickDay(dayId, silent){
+  bdDayId = dayId;
+  if(!silent) buildWpGrid();
+}
+
+function bdSave(){
+  if(!bdKey || !bdChoice) { toast('Please select an option'); return; }
+  if(bdChoice === 'done' && !bdDayId) { toast('Please select which workout'); return; }
+
+  if(bdChoice === 'clear'){
+    delete S.log[bdKey];
+  } else {
+    // Always start fresh for the key to avoid stale flags
+    S.log[bdKey] = {
+      dayId: bdDayId || (S.log[bdKey] && S.log[bdKey].dayId) || DAYS[0].id,
+      completed: (S.log[bdKey] && S.log[bdKey].completed) || [],
+      isRest:   bdChoice === 'rest',
+      isCardio:  bdChoice === 'cardio',
+      isDone:   bdChoice === 'done',
+      isPartial: false,
+    };
+    if(bdChoice === 'done') S.log[bdKey].dayId = bdDayId;
+  }
+
+  save();
+  bdClose();
+  renderDash();
+  if(curScreen === 'home') renderHome();
+  toast(
+    bdChoice==='clear'   ? '✓ Day cleared' :
+    bdChoice==='done'    ? '✅ Marked as completed' :
+    bdChoice==='cardio'  ? '🚴 Marked as cardio' :
+                           '😴 Marked as rest'
+  );
+}
 
 // ═══════════════════════════════════════
 // RESET
